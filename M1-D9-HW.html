@@ -16,17 +16,19 @@
         - Create a USER BOARD with 24 randomized numbers that highlights as the main board does
         - Let the user choose HOW MANY user boards he's willing to play with and create them.
     -->
-    <div id="bingo-board"></div>
-    
+    <di id="bingo-board">
+ 
+        <div id="board-cells"> </div>
+    </div>
     <script>
 
       const createCells = (function(){
 
           for(let i = 0; i < 76; i++){
-            let board = document.getElementById('bingo-board');
+            let boardCells = document.getElementById('board-cells');
             let cell = document.createElement('div')
             cell.classList.add('cell')
-                board.appendChild(cell)
+                boardCells.appendChild(cell)
           }
       }())//Self Invoked Function
 
