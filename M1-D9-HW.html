@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0436)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/191767270778436.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210318%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210318T133852Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27M1-D9.html&X-Amz-Signature=0d6263582dedbc509beeb83f6bcbc4617fbb83c0e0f901f2c8298946105bd71f -->
-<html><!--
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+      <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+  <body>
+    <!--
         BINGO CHALLENGE!!!
         Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
         Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
@@ -9,7 +15,23 @@
         - Take ALWAYS a new number (eg. avoid randoming the number 10 3 times)
         - Create a USER BOARD with 24 randomized numbers that highlights as the main board does
         - Let the user choose HOW MANY user boards he's willing to play with and create them.
-    --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
-  <body>
+    -->
+    <div id="bingo-board"></div>
+    
+    <script>
 
+      const createCells = (function(){
+
+          for(let i = 0; i < 76; i++){
+            let board = document.getElementById('bingo-board');
+            let cell = document.createElement('div')
+            cell.classList.add('cell')
+                board.appendChild(cell)
+          }
+      }())//Self Invoked Function
+
+    
+    </script>
+
+    <!-- <script src="script.js"></script> -->
 </body></html>

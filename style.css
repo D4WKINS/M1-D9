@@ -1,0 +1,30 @@
+*{
+box-sizing:border-box;
+}
+
+
+body{
+    background-color:rgb(20, 20, 20);
+    text-align:center;
+    margin:0 auto;
+}
+
+#bingo-board{
+    width:100%;
+    margin:auto;
+    max-width: 768px;
+    border: solid 10px rgb(255, 53, 53);
+    border-radius:15px;
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns:repeat(auto-fill, minmax(60px, 1fr));
+    grid-gap:3px;
+    background-color:rgb(255, 53, 53) ;
+    padding:10px;
+}
+.cell{
+    text-align: center;
+    height: 50px;
+    background-color:rgb(255, 255, 255);
+}
+
